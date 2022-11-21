@@ -1,0 +1,105 @@
+.navbar {
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: $white;
+    padding: 0;
+
+    &-brand {
+        
+        z-index: 10;
+        img {
+            height: 80px;
+        }
+
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+    }
+    a {
+        color: $black;
+    }
+    .dropdown-item {
+        font-size: 1.5rem;
+    }
+}
+
+.navbar-toggler {
+    padding: 2em 1em;
+    margin-right: 1em;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.collapse {
+    background-color: $white;
+}
+
+.nav-item {
+    padding-left: 1em;
+}
+
+.dropdown-menu {
+    background-color: $white;
+    border: none;
+}
+
+.flag {
+    height: 25px;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .navbar {
+        &-brand {
+            position: relative;
+            bottom: -20px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    .container-fluid {
+        width: 80%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .nav-item  {
+        margin:0 1rem;
+        padding: 0;
+    }
+
+    .nav-link {
+        padding: 1em;
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .dropdown-item {
+        padding: 1em;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .nav-item {
+        margin-left: 3rem;
+    }    
+}
+

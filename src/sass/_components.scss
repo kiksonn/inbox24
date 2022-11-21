@@ -1,0 +1,222 @@
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1300px;
+}
+
+.wrapper-small {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 950px;
+}
+
+.section {
+    padding: 5em 0;
+}
+
+.title-two {
+    color: $black;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 1em;
+}
+.title-three {
+    color: $black;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.title-four {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: $black;
+}
+
+.text {
+    color: $black;
+    font-size: 1.8rem;
+
+    &-bold {
+        font-weight: 500;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    color: $white;
+    background: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 60%, rgba(173, 12, 122, 1) 100%);
+    padding: 0 1em;
+    overflow: hidden;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 90%, 65% 100%, 0 100%);
+
+    margin: 1em 0;
+    &:hover {
+        color: $white;
+        background: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
+    }
+
+    img {
+        height: 25px;
+        margin-left: 2rem;
+    }
+}
+
+.break {
+    display: block;
+}
+
+
+.white-block {
+    position: absolute;
+    height: 40px;
+    width: 35%;
+    background-color: $white;
+
+    &-right {
+        bottom: 0;
+        right: -50px;
+        transform: skew(-45deg);
+    }
+
+    &-left {
+        display: none;
+        bottom: -40px;
+        left: -50px;
+        transform: skew(-45deg);
+    }
+}
+.line {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 20px;
+
+    &-block{
+        position: absolute;
+        height: 100%;
+    }
+
+    &-block--one {
+        width: 20%;
+        border-bottom: 2px solid $grey;
+        border-right: 3px solid $grey;
+        transform: skew(-45deg);
+    }
+    &-block--two {
+        width: calc(80% - 8px);
+        border-top: 2px solid $grey;
+        right: 0;
+    }
+}
+
+
+
+// .link {
+//     position: relative;
+//     color: $black;
+
+//     &:hover {
+//         color: $pink;
+//     }
+
+//     &::before {
+//         position: absolute;
+//         content: '';
+//         bottom: 0;
+//         left: 0;
+//         height: 2px;
+//         width: 100%;
+//         background-color: $black;
+//         z-index: -1;
+//         transition: .3s height ease;
+//     }
+
+//     &:hover::before {
+//         height: 100%;
+
+//     }
+
+// }
+
+// .custom-btn {
+//     cursor: pointer;
+//        position: relative;
+//        color: $white;
+//        background: rgb(53,40,121);
+//        background: linear-gradient(90deg, rgba(53,40,121,1) 0%, rgba(99,29,121,1) 50%, rgba(147,18,122,1) 100%);
+//         font-size: 2rem;
+//         padding: 1em 1.5em;
+//        text-decoration: none; 
+//        text-align: center;
+//        overflow: hidden;
+//        border: none;
+//        border-radius: 0;
+//         &:hover {
+//             color: $white;
+//             background: rgb(72,35,121);
+//             background: linear-gradient(90deg, rgba(72,35,121,1) 0%, rgba(140,20,122,1) 50%, rgba(204,5,122,1) 100%);
+//         }
+
+
+
+//         &::before {
+//             content: '';
+//             position: absolute;
+//             height: 20%;
+//             width:  45%;
+//             left: -50px;
+//             transform: skew(45deg);
+//             background-color: $grey-two;
+//             bottom: -1px;
+//         }
+
+
+// }
+
+// Medium devices (tablets, 768px and up)
+
+
+@media (min-width: 768px) {
+    .title-two {
+        font-size: 3.5rem;
+    }
+    .title-four {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: 2rem;
+    }
+   
+    .btn {
+        width: 280px;
+        padding: 0 2em;
+    }
+
+    .white-block {
+        &-left {
+            display: block;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .title-two {
+        font-size: 4.5rem;
+    }
+    .title-three {
+        font-size: 2.2rem;
+    }
+}
