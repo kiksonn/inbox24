@@ -1,0 +1,47 @@
+.accordion {
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tile {
+        flex: 1;
+        margin: 1.5em 0;
+
+        &--one {
+            display: flex;
+        }
+        &-btn {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            height: 50px;
+            font-size: 1.4rem;
+            margin: 0;
+            
+            &--active {
+                 color: $white;
+                 background: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 60%, rgba(173, 12, 122, 1) 100%);
+            }
+            &--one {
+                
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 35% 90%, 25% 100%, 0 100%);
+            }
+            // &--two {
+            //     clip-path: polygon(0 0, 100% 0, 100% 90%, 35% 90%, 25% 100%, 0 100%);
+            // }
+
+            &--three {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 65% 90%, 0 90%);
+            }
+            
+        }
+        &--two {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
