@@ -111,7 +111,7 @@
     <header class="header">
         <div class="header__wrapper wrapper-small">
             <h1 class="header__title">
-                Jedna Skrytka. <span class="break">Wiele Korzyści</span>
+                Jedna Skrytka. <span class="break"></span>Wiele Korzyści
             </h1>
             <a class="btn" href="#">Pobierz aplikację <img src="./dist/img/icons/arrow-right.svg" alt=""></a>
         </div>
@@ -150,119 +150,249 @@
         <div class="line-block line-block--two"></div>
     </div>
 
-    <section class="section accordion">
-        <div class="wrapper">
-            <h3 class="title-three">Jedna Skrytka</h3>
-            <h2 class="title-two">Wiele korzyści</h2>
-            <div class="accordion__box">
-                <div class="accordion__tile accordion__tile--one">
-                    <a class="accordion__tile-btn accordion__tile-btn--one accordion__tile-btn--active">Dla ciebie</a>
-                    <a class="accordion__tile-btn accordion__tile-btn--two">Dla Firm</a>
-                    <a class="accordion__tile-btn accordion__tile-btn--three">Dla Kuriera</a>
+
+    <section class="section accordions">
+        <div class="accordions__box wrapper">
+            <div class="accordions__tile accordions__tile--one">
+                <h3 class="title-three">Jedna Skrytka</h3>
+                <h2 class="title-two">Wiele korzyści</h2>
+
+                <div class="accordions__btns">
+                    <button class="accordions__tile-btn accordions__tile-btn--one accordions__tile-btn--active">Dla
+                        ciebie</button>
+                    <button class="accordions__tile-btn accordions__tile-btn--two">Dla Firm</button>
+                    <button class="accordions__tile-btn accordions__tile-btn--three">Dla Kuriera</button>
                 </div>
 
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h4 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Oszczędzasz czas i koszty
-                            </button>
-                        </h4>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugit molestiae
-                                aspernatur ab accusamus eum.
-                            </div>
+                <div class="accordion">
+                    <div class="accordion__tile">
+                        <div class="accordion__left">
+                            <div class="accordion__left-bar"></div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h4 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Korzystasz o dowolnej porze dnia i nocy
-                            </button>
-                        </h4>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora deserunt minima
-                                dolorem molestias optio illo atque laborum recusandae dolore minus.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h4 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Wystarczy kilka kliknięć i już
-                            </button>
-                        </h4>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet. Minima
-                                beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
-                                dolorem consequatur?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h4 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Bezpieczeństwo danych osobowych
-                            </button>
-                        </h4>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet. Minima
-                                beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
-                                dolorem consequatur?
+                        <div class="accordion__right">
+                            <btn class="accordion__btn accordion__btn--active">Oszczędzasz czas i koszty</btn>
+                            <div class="accordion__info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt
+                                    voluptatibus optio ullam dolor accusamus tempora excepturi quos culpa dolores!</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item">
-                        <h4 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Bezpieczeństwo danych osobowych
-                            </button>
-                        </h4>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet. Minima
-                                beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
-                                dolorem consequatur?
+                    <div class="accordion__tile">
+                        <div class="accordion__left"></div>
+                        <div class="accordion__right">
+                            <btn class="accordion__btn">Korzystasz o dowolnej porze dnia i nocy</btn>
+                            <div class="accordion__info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt
+                                    voluptatibus optio ullam dolor accusamus tempora excepturi quos culpa dolores!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h4 class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                Ogranicz emisje CO<sub>2</sub>
-                            </button>
-                        </h4>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet. Minima
-                                beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
-                                dolorem consequatur?
+
+                    <div class="accordion__tile">
+                        <div class="accordion__left"></div>
+                        <div class="accordion__right">
+                            <btn class="accordion__btn">Wystarczy kilka kliknięć i już</btn>
+                            <div class="accordion__info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt
+                                    voluptatibus optio ullam dolor accusamus tempora excepturi quos culpa dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__tile">
+                        <div class="accordion__left"></div>
+                        <div class="accordion__right">
+                            <btn class="accordion__btn">Bezpieczeństwo danych osobowych</btn>
+                            <div class="accordion__info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt
+                                    voluptatibus optio ullam dolor accusamus tempora excepturi quos culpa dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__tile">
+                        <div class="accordion__left"></div>
+                        <div class="accordion__right">
+                            <btn class="accordion__btn">Ogranicz emisje CO <sub>2</sub></btn>
+                            <div class="accordion__info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt
+                                    voluptatibus optio ullam dolor accusamus tempora excepturi quos culpa dolores!</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion__tile accordion__tile--two"><img src="./dist/img/accordion.jpg"
-                        alt="tekst alternatywny jakis tu bedzie..."></div>
+                dokoncze w piatek
             </div>
+
+            <div class="accordions__tile accordions__tile--two"><img src="./dist/img/accordion.jpg"
+                    alt="tekst alternatywny jakis tu bedzie..."></div>
         </div>
     </section>
+
+    <div class="bar section">
+        <div class="bar__wrapper wrapper-small">
+            <h3 class="bar__title">Dla Ciebie<span class="break"></span>i Twoich Bliskich</h3>
+            <p class="bar__text">Sprawdź jak INBOX24 ułatwi twoje życie</p>
+            <a href="#"><img src="./dist/img/icons/arrow-right.svg" alt=""></a>
+        </div>
+        <div class="white-block white-block-right"></div>
+    </div>
+
+    <!-- <section></section> -->
+    <!-- <div class="line">
+        <div class="line-block line-block--one"></div>
+        <div class="line-block line-block--two"></div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="section accordions">
+        <div class="accordions__box wrapper">
+            <h3 class="title-three">Jedna Skrytka</h3>
+            <h2 class="title-two">Wiele korzyści</h2>
+
+                <div class="accordions__tile accordions__tile--one">
+                    <div class="accordions__btns">
+                        <button class="accordions__tile-btn accordions__tile-btn--one accordions__tile-btn--active">Dla
+                            ciebie</button>
+                        <button class="accordions__tile-btn accordions__tile-btn--two">Dla Firm</button>
+                        <button class="accordions__tile-btn accordions__tile-btn--three">Dla Kuriera</button>
+                    </div>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Oszczędzasz czas i koszty
+                                </button>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugit molestiae
+                                    aspernatur ab accusamus eum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Korzystasz o dowolnej porze dnia i nocy
+                                </button>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora deserunt minima
+                                    dolorem molestias optio illo atque laborum recusandae dolore minus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Wystarczy kilka kliknięć i już
+                                </button>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet.
+                                    Minima
+                                    beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
+                                    dolorem consequatur?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Bezpieczeństwo danych osobowych
+                                </button>
+                            </h4>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet.
+                                    Minima
+                                    beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
+                                    dolorem consequatur?
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Bezpieczeństwo danych osobowych
+                                </button>
+                            </h4>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet.
+                                    Minima
+                                    beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
+                                    dolorem consequatur?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Ogranicz emisje CO<sub>2</sub>
+                                </button>
+                            </h4>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet.
+                                    Minima
+                                    beatae natus, harum aliquid unde libero amet, accusamus animi sint repudiandae fuga
+                                    dolorem consequatur?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordions__tile accordions__tile--two"><img src="./dist/img/accordion.jpg"
+                        alt="tekst alternatywny jakis tu bedzie..."></div>
+            
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- <div class="line">
         <div class="line-block line-block--one"></div>
