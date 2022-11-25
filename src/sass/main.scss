@@ -14,9 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
-cursor
-
-body {
+cursor body {
     font-size: 1.8rem;
     overflow-x: hidden;
     background-color: $white;
@@ -96,11 +94,11 @@ body {
     transform: translate(-50%, -50%);
     padding: 1em;
     width: 100%;
-    background: linear-gradient(180deg,#762c6e,#35297a);
-    background: linear-gradient(180deg,#e3017a 42.71%,#7d2c6f);
-    
-    background: linear-gradient(180deg,#762c6e,#35297a);
-    
+    background: linear-gradient(180deg, #762c6e, #35297a);
+    background: linear-gradient(180deg, #e3017a 42.71%, #7d2c6f);
+
+    background: linear-gradient(180deg, #762c6e, #35297a);
+
 
     &-img {
         height: 60px;
@@ -129,6 +127,7 @@ body {
             border: 2px solid $white;
             transition: .3s background-color ease, .3s color ease;
             font-size: 1.8rem;
+
             &:hover {
                 background-color: transparent;
                 color: $white;
@@ -137,18 +136,20 @@ body {
     }
 
 }
+
 .hidden-cookies {
     display: none;
 }
 
 
 @media (min-width: 768px) {
-    
+
     .cookie {
         padding: 2em;
         max-width: 420px;
     }
 }
+
 // .cursor {
 //     display: none;
 // }
@@ -172,12 +173,12 @@ body {
 //         transform-origin: 100% 100%;
 //         z-index: 100;
 //     }
-    
+
 //     .link-grow {
 //         transform: scale(2);
 //         background-color: transparent;
 //     }
-    
+
 //     a {
 //         cursor: none;
 //     }
@@ -199,13 +200,14 @@ body {
         height: 100%;
     }
 
-    &__title{
+    &__title {
         font-size: 3.4rem;
         color: $white;
         margin-bottom: 2rem;
         font-weight: bold;
     }
 }
+
 .div-margin {
     display: block;
     height: 85px;
@@ -224,7 +226,7 @@ body {
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .header {
         &__title {
             font-size: 8rem;
@@ -247,6 +249,7 @@ body {
     justify-content: center;
     background-color: gray;
     overflow: hidden;
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -254,7 +257,7 @@ body {
     }
 
     &__title {
-        font-size: 3.3rem;
+        font-size: 3rem;
         color: $white;
         font-weight: 700;
     }
@@ -263,11 +266,13 @@ body {
         margin-top: .5em;
         color: $white;
         font-size: 2rem;
+
     }
 
     a {
         margin-top: 2rem;
         align-self: flex-end;
+
         img {
             height: 30px;
             align-self: flex-end;
@@ -279,8 +284,140 @@ body {
 @media (min-width: 768px) {
     .bar {
         height: 600px;
+
         &__title {
             font-size: 5rem;
+        }
+    }
+}
+
+// OFFER
+
+.offer {
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tile {
+        flex: 1;
+
+        &-top {
+            position: relative;
+            background-color: gray;
+            height: 200px;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                border-right: 1px solid $grey;
+            }
+        }
+
+        &-bottom {
+            padding: 2em;
+            border: 1px solid $grey;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                color: #e3007a;
+                font-size: 2rem;
+                font-weight: bold;
+                transition: .3s ease;
+                img {
+                    height: 30px;
+                }
+
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .offer {
+        &__box {
+            flex-direction: row;
+        }
+
+        &__tile {
+            margin: 0 2em;
+
+            &-top {
+                height: 270px;
+            }
+
+            &-bottom {
+                padding: 4em;
+                border-top: none;
+            }
+        }
+    }   
+}
+
+// NEWS
+
+.news {
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tile {
+        display: flex;
+        flex: 1;
+        margin: 1em 0;
+        &-left {
+            position: relative;
+            background-color: $grey;
+            overflow: hidden;
+            height: 130px;
+            width: 100%;
+        }
+
+        &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-left: 1em;
+        }
+    } 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .news {
+        &__box {
+            flex-direction: row;
+        }
+        &__tile {
+            margin: 0 1em;
+        }
+    }
+}
+
+// FUTURE
+
+.future {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__left {
+        flex: 1;
+    }
+    &__right {
+        flex: 1;
+        background-color: $grey;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .future {
+        &__wrapper {
+            flex-direction: row;
         }
     }
 }
