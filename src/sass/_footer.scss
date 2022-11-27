@@ -25,6 +25,7 @@
 
                 a {
 
+                    margin: 0 0.5em;
                     color: $black;
                     border-radius: 50%;
                     padding: 1.5em;
@@ -151,6 +152,7 @@
             &-mid {
                 flex:1.6;
                 flex-wrap: wrap;
+                align-items: flex-end;
             }
 
             &-right {
@@ -167,7 +169,7 @@
                 }
 
                 &--two {
-                    margin-left: 0;
+                    margin: 0 0 2em 0;
                 }
 
                 &--nav {
@@ -176,6 +178,9 @@
 
                 &--three { margin: 0 1.5em;}
             }
+        }
+        &__bar--wrapper {
+            margin-top: 2em;
         }
     }
 }
