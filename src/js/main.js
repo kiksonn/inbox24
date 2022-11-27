@@ -63,13 +63,13 @@ cookieBtn.addEventListener('click', hideCookieBox)
 // window.onload = spinerTimeout;
 
 // const navBtn = document.querySelector('.hamburger')
-// const footerYear = document.querySelector('.footer__year')
 // const handleNav = () => {
 //     navBtn.classList.toggle('is-active')
 // }
-// const handleCurrentYear = () => {
-//     const year = (new Date).getFullYear();
-//     footerYear.innerText = year;
-// }
+const footerYear = document.querySelector('.footer__year')
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
+handleCurrentYear();
 // navBtn.addEventListener('click', handleNav)
-// handleCurrentYear();

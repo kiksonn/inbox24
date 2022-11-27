@@ -1,245 +1,181 @@
-// .footer {
+.footer {
+    &__bottom {
+        padding-bottom: 2em;
+        // &-left{}
+        // &-mid{}
+        // &-right{}
 
-//     &__top {
-//         padding: 4em 0;
-//         background-color: $grey-two;
+        &--wrapper {
+            display: flex;
+            flex-direction: column;
+        }
 
-//         &-wrapper {
-//             display: flex;
-//             flex-direction: column;
-//         }
+        &-tile {
 
-//         &-left,
-//         &-right,
-//         &-info,
-//         &-contact {
-//             display: flex;
-//             flex-direction: column;
+            &--one {
+                img {
+                    display: block;
+                    height: 80px;
+                    margin: 0 auto;
+                }
+            }
 
-//         }
+            &--two {
+                margin: 3em auto;
 
-//         // LEFT
-//         &-left {
-//             margin-bottom: 2em;
-//         }
+                a {
 
-//         // RIGHT
-//         &-info {
-//             margin: 1em 0;
-//         }
-//         // &-img {
-//         //     // height: 120px;
-//         //     // width: 100%;
-//         //     // border-radius: 50%;
-//         //     // overflow: hidden;
+                    color: $black;
+                    border-radius: 50%;
+                    padding: 1.5em;
+                    border: 1px solid $grey;
 
-//         //     img {
-//         //         width: 100%;
-//         //     }
-//         // }
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
 
-//         &-contact {
-//             display: flex;
-//             flex-direction: column;
+                    
+                }
 
-//             a {
-//                 color: $black;
-//                 text-decoration: none;
-//             }
-//         }
-
-//     }
-
-//     &__bottom {
-//         padding: 3em 0;
-//         background-color: $purple;
-
-//         &-wrapper {
-//             display: flex;
-//             flex-direction: column;
-//         }
-
-//         &-left,
-//         &-right {
-//             display: flex;
-//             flex-direction: column;
-//         }
-
-//         // LEFT
-
-//         &-logo {
-//             align-self: center;
-
-//             img {
-//                 height: 90px;
-//             }
-//         }
-
-//         &-socials {
-//             display: flex;
-//             margin: 1em 0;
-
-//             &-icon {
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 height: 40px;
-//                 width: 40px;
-//                 background-color: $white;
-//                 border-radius: 50%;
-//                 margin: 0 .3em;
-
-//                 img {
-//                     height: 50%;
-//                     width: 50%;
-//                     transition: .3s transform ease;
-//                 }
-
-//                 &:hover {
-//                     img {
-//                         transform: scale(1.2);
-//                     }
-
-//                 }
-//             }
-
-//         }
-
-//         // RIGHT
-
-//         &__box {
-//             display: flex;
-//             flex-direction: column;
-//             margin: .5em 0;
-
-//             a {
-//                 color: $white;
-//                 text-decoration: none;
-
-//                 &:hover {
-//                     text-decoration: underline;
-//                 }
-//             }
-//         }
-//     }
-
-//     // END
-//     &__end {
-//         background-color: $purple;
-//         padding-bottom: 3em;
-
-//         &-text {
-//             margin: 0;
-//             color: $grey;
-//         }
-//     }
-// }
-
-// // // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//     .footer {
-
-//         // TOP
-//         &__top {
-//             &-wrapper {
-//                 flex-direction: row;
-//                 justify-content: space-around;
-//             }
-
-//             // LEFT
-
-//             &-btn {
-//                 align-self: start;
-//             }
-
-//             &-left {
-//                 flex: 1.5;
-//                 margin: 0;
-//                 justify-content: center;
-//             }
-// // RIGHT
-//             &-right {
-//                 flex: 1;
-//                 justify-content: center;
-//             }
-
-//             &-img {
-//             height: 120px;
-//             width: 120px;
-//             border-radius: 50%;
-//             overflow: hidden;
-
-//             img {
-//                 width: 100%;
-//                 height: 100%;
                 
-//             }
-//         }
-            
-//         }
+            }
 
-//         // BOTTOM
-//         &__bottom {
-//             &-wrapper {
-//                 flex-direction: row;
-//             }
+            &--nav {
+                a {
+                    color: $black;
+                    font-weight: bold;
+                }
 
-//             // LEFT
+                ul {
+                    padding: 0;
 
-//             &-left {
-//                 flex: 2;
-//                 align-items: center;
-//                 margin-right: 3em;
-//             }
+                    li {
+                        list-style-type: none;
 
-//             // RIGHT
+                        a {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
 
-//             &-right {
-//                 flex: 3;
-//                 flex-direction: row;
-//             }
+            &--three {
+                ul {
+                    padding: 0;
 
-//             &__box {
-//                 flex: 1;
-//                 margin: 0 1em;
+                    li {
+                        list-style-type: none;
 
-//                 a {
-//                     margin: 0.2em 0;
-//                 }
-//             }
-//         }
-//     }
+                        a {
+                            color: $grey-two;
+                        }
+                    }
+                }
 
-//     .br {
-//         display: block;
-//     }
-// }
+            }
 
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-//     .footer {
-//         &__bottom {
+        }
 
-//             // LEFT
+    }
 
-//             &-left {
-//                 align-items: flex-start;
-//                 // margin-right: 3em;
-//                 flex: 4;
-//             }
-
-//             &-logo {
-//                 align-self: flex-start;
-
-//             }
-
-//             // RIGHT
-
-//             &__box {
-//                 margin: 0 1em;
-//             }
-//         }
-//     }
+    &__bar {
+        &-text {
+            font-size: 1.8rem;
+            color: $grey-two;
+        }
+    }
 
 
-// }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .footer {
+        &__bottom {
+            // &--wrapper {
+
+            //     // flex-wrap: wrap;
+            //     background-color: rgb(27, 27, 27);
+            // }
+
+            &-left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            &-mid {
+                display: flex;
+            }
+
+            // &-right{}
+
+            &-tile {
+                &--one {
+                    img {
+                        margin-left: 0;
+                    }
+                }
+
+                &--two {
+                    margin-left: 0;
+                }
+                &--nav {
+                    margin: 0 1em;
+                }
+
+                &--three {
+                    margin: 2em 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1620px) {
+    .footer {
+        &__bottom {
+            &--wrapper {
+                flex-direction: row;
+            }
+
+            &-left {
+                flex: 1;
+            }
+
+            &-mid {
+                flex:1.6;
+                flex-wrap: wrap;
+            }
+
+            &-right {
+                flex: 1;
+            }
+
+            &-tile {
+                &--one {
+                    
+                    img {
+                        // width: 100%;
+                        height: 100px;
+                    }
+                }
+
+                &--two {
+                    margin-left: 0;
+                }
+
+                &--nav {
+                    margin: 2em 4em 0 4em;
+                }
+
+                &--three { margin: 0 1.5em;}
+            }
+        }
+    }
+}

@@ -119,6 +119,7 @@ a {
         border-top: 2px solid $grey;
         right: 0;
     }
+
 }
 
 
@@ -209,10 +210,22 @@ a {
             display: block;
         }
     }
+
+    .line {
+        &__wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+
+    .section {
+        padding: 10em 0;
+    }
+    
     .title-two {
         font-size: 4.5rem;
     }

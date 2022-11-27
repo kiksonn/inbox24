@@ -1,4 +1,4 @@
-@import 'colors', 'components', 'nav', 'about', 'accordion';
+@import 'colors', 'components', 'nav', 'about', 'accordion', 'footer';
 
 // GENERAL START
 *,
@@ -409,11 +409,12 @@ cursor body {
         flex-direction: column;
     }
     &__left {
-        flex: 1;
+        margin-bottom: 2em;
     }
+
     &__right {
-        flex: 1;
-        background-color: $grey;
+        height: 50vh;
+        background-color: grey;
     }
 }
 
@@ -421,7 +422,33 @@ cursor body {
 @media (min-width: 992px) {
     .future {
         &__wrapper {
+            display: flex;
             flex-direction: row;
+        }
+        &__left {
+            flex: 3;
+            margin: 0 8em 0 0;
+        }
+    
+        &__right {
+            flex: 2;
+            height: auto;
+        }
+
+       
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .future {
+        &__left {
+            flex: 1;
+            margin: 0 20em 0 0;
+        }
+    
+        &__right {
+            flex: 1;
         }
     }
 }
