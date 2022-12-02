@@ -80,19 +80,20 @@ a {
 
 .white-block {
     position: absolute;
-    height: 40px;
     width: 35%;
     background-color: $white;
 
     &-right {
+        height: 40px;
         bottom: 0;
         right: -50px;
         transform: skew(-45deg);
     }
 
     &-left {
+        height: 20px;
         display: none;
-        bottom: -40px;
+        bottom: -20px;
         left: -50px;
         transform: skew(-45deg);
     }
@@ -211,12 +212,12 @@ a {
         }
     }
 
-    .line {
-        &__wrapper {
-            width: 90%;
-            margin: 0 auto;
-        }
-    }
+    // .line {
+    //     &__wrapper {
+    //         width: 90%;
+    //         margin: 0 auto;
+    //     }
+    // }
 }
 
 // Large devices (desktops, 992px and up)
