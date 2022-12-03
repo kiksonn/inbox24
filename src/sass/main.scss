@@ -27,9 +27,32 @@ cursor body {
     color: $white;
 }
 
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    height: 200px;
+    background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 60%, rgba(173, 12, 122, 1) 100%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
+}
+
+
 .shadow-bg {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
 // SPINER
 
 .spiner {
@@ -302,35 +325,25 @@ cursor body {
         flex-direction: column;
     }
 
-    &__tile {
-        flex: 1;
-        margin: 2em 0;
-        &-top {
-            position: relative;
-            background-color: gray;
-            height: 200px;
-            overflow: hidden;
+    &-img {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background-color: gray;
+    }
 
-            &:nth-child(1) {
-                border-right: 1px solid $grey;
-            }
+    &__left {
+        margin-bottom: 3em;
+
+        &-block {
+            display: none;
         }
+    }
 
-        &-bottom {
-            padding: 2em;
-            border: 1px solid $grey;
-            border-top: none;
-            a {
-                display: flex;
-                justify-content: space-between;
-                color: $pink;
-                font-size: 2rem;
-                font-weight: bold;
-                transition: .3s ease;
-                img {
-                    height: 30px;
-                }
-
+    &__right {
+        &-tile {
+            &--one {
+                margin-bottom: 3em;
             }
         }
     }
@@ -343,19 +356,133 @@ cursor body {
             flex-direction: row;
         }
 
-        &__tile {
-            margin: 0 2em;
+        // &-img {
 
-            &-top {
-                height: 270px;
+        //     width: 100%;
+        //     height: 100%;
+        // }
+
+        &__left {
+            // height: 80vh;
+            flex: 2;
+            margin: 0;
+
+            &-img {
+                // position: relative;
+                width: 100%;
+                height: 75%;
             }
 
-            &-bottom {
-                padding: 4em;
+            &-block {
+                display: block;
+                position: absolute;
+                width: 40%;
+                background-color: $white;
+
+                height: 20px;
+                bottom: 0;
+                right: -50px;
+                transform: skew(-45deg);
+            }
+
+        }
+
+        &__right {
+            flex: 1;
+            margin-left: 10em;
+
+            &-img {
+                width: 300px;
+                height: 420px;
+            }
+
+            &-tile {
+                &--one {
+                    margin-bottom: 5em;
+                }
             }
         }
-    }   
+    }
 }
+
+@media (min-width: 1200px) {
+    .offer {
+        &__left {
+            flex: 1;
+
+        }
+
+        &__right {
+            flex: 1;
+            margin-left: 15rem;
+
+            &-img {
+                width: 350px;
+            }
+        }
+    }
+}
+
+// .offer {
+//     &__box {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     &__tile {
+//         flex: 1;
+//         margin: 2em 0;
+//         &-top {
+//             position: relative;
+//             background-color: gray;
+//             height: 200px;
+//             overflow: hidden;
+
+//             &:nth-child(1) {
+//                 border-right: 1px solid $grey;
+//             }
+//         }
+
+//         &-bottom {
+//             padding: 2em;
+//             border: 1px solid $grey;
+//             border-top: none;
+//             a {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 color: $pink;
+//                 font-size: 2rem;
+//                 font-weight: bold;
+//                 transition: .3s ease;
+//                 img {
+//                     height: 30px;
+//                 }
+
+//             }
+//         }
+//     }
+// }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     .offer {
+//         &__box {
+//             flex-direction: row;
+//         }
+
+//         &__tile {
+//             margin: 0 2em;
+
+//             &-top {
+//                 height: 270px;
+//             }
+
+//             &-bottom {
+//                 padding: 4em;
+//             }
+//         }
+//     }   
+// }
 
 // NEWS
 
@@ -370,6 +497,7 @@ cursor body {
         display: flex;
         flex: 1;
         margin: 2em 0;
+
         &-left {
             position: relative;
             background-color: grey;
@@ -390,7 +518,7 @@ cursor body {
             font-size: 1.6rem;
             color: $grey-two;
         }
-    } 
+    }
 }
 
 @media (min-width: 1200px) {
@@ -398,6 +526,7 @@ cursor body {
         &__box {
             flex-direction: row;
         }
+
         &__tile {
             margin: 0 2em 0 0;
         }
@@ -411,6 +540,7 @@ cursor body {
         display: flex;
         flex-direction: column;
     }
+
     &__left {
         margin-bottom: 2em;
     }
@@ -428,17 +558,18 @@ cursor body {
             display: flex;
             flex-direction: row;
         }
+
         &__left {
             flex: 3;
             margin: 0 8em 0 0;
         }
-    
+
         &__right {
             flex: 2;
             height: auto;
         }
 
-       
+
     }
 }
 
@@ -449,7 +580,7 @@ cursor body {
             flex: 1;
             margin: 0 20em 0 0;
         }
-    
+
         &__right {
             flex: 1;
         }
