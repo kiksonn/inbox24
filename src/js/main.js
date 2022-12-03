@@ -87,19 +87,30 @@ function openAccordionItems() {
 
 	if(this.nextElementSibling.classList.contains('active')) {
 		this.nextElementSibling.classList.remove('active')
-        console.log('1')
+        this.classList.remove('active-two')
+		this.parentElement.classList.remove('active-three')
+        
 	} else {
 
 		closeAccordionItem()
 		this.nextElementSibling.classList.toggle('active')
-		console.log('2')
-	}
+		this.classList.toggle('active-two')
+		this.parentElement.classList.toggle('active-three')
+        
+    }
 	
 }
 
 const closeAccordionItem = () => {
 	const allActiveItems = document.querySelectorAll('.accordion__info')
 	allActiveItems.forEach(item => item.classList.remove('active'))
+
+
+    const accordionTile = document.querySelectorAll('.accordion__tile')
+	accordionTile.forEach(item => item.classList.remove('active-three'))
+
+    const AcordionBtn = document.querySelectorAll('.accordion__btn')
+	AcordionBtn.forEach(item => item.classList.remove('active-two'))
 }
 
 const clickOutsideAccordion = e => {

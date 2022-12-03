@@ -53,16 +53,18 @@
     flex-direction: column;
     
     &__tile {
-            border-left: 3px solid $grey;
-            padding-left: 2em;
-            margin-bottom: 2em;
-        }
-        
-        &__btn {
-            font-size: 1.9rem;
+        border-left: 3px solid $grey;
+        padding-left: 2em;
+        margin-bottom: 2em;
+        transition: border-left .5s ease;
+    }
+    
+    &__btn {
+        font-size: 1.9rem;
         font-weight: bold;
         color: $grey-two;
         cursor: pointer;
+        transition: color .5s ease;
     }
     
     // &__left {
@@ -80,6 +82,10 @@
         max-height: 0px;
 
         transition: max-height .5s ease;
+
+        &-text {
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -120,4 +126,12 @@
 
 .active{
     max-height: 200px;
+}
+
+.active-two {
+    color: $black;
+}
+
+.active-three {
+    border-left : 3px solid $black;
 }
