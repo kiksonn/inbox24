@@ -7,11 +7,11 @@
     &__btns {
         display: flex;
     }
-
+    
     &__tile {
         flex: 1;
         margin: 1.5em 0;
-
+        
         &--one {
             display: flex;
             flex-direction: column;
@@ -35,7 +35,7 @@
                  &:hover {
                     color: $white;
                     background: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
-                 }
+                }
             }
         }
         &--two {
@@ -47,30 +47,40 @@
 }
 
 .accordion {
-    margin-top: 2rem;
-
+    margin-top: 5rem;
+    
     display: flex;
     flex-direction: column;
     
     &__tile {
-        display: flex;
-    }
-
-    &__btn {
-        font-size: 1.9rem;
+            border-left: 3px solid $grey;
+            padding-left: 2em;
+            margin-bottom: 2em;
+        }
+        
+        &__btn {
+            font-size: 1.9rem;
         font-weight: bold;
         color: $grey-two;
+        cursor: pointer;
     }
-
-    &__left {
+    
+    // &__left {
         
-        margin-right: 1rem;
-        &-bar {
-            width: 2px;
-            height: 40px;
-            background-color: $grey-two;
-        }
-    }    
+    //     margin-right: 1rem;
+    //     &-bar {
+        //         width: 2px;
+        //         height: 40px;
+    //         background-color: $grey-two;
+    //     }
+    // }    
+    
+    &__info {
+        overflow: hidden;
+        max-height: 0px;
+
+        transition: max-height .5s ease;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -96,7 +106,7 @@
             }
         }
     }
-
+    
     .accordion {
         &__btn {
             font-size: 2.5rem;
@@ -106,3 +116,8 @@
 
 // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
+
+
+.active{
+    max-height: 200px;
+}

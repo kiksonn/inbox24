@@ -73,3 +73,58 @@ const handleCurrentYear = () => {
 }
 handleCurrentYear();
 // navBtn.addEventListener('click', handleNav)
+
+
+
+
+
+
+
+const accordion = document.querySelector('.accordion')
+const accordionBtns = document.querySelectorAll('.accordion__btn')
+
+function openAccordionItems() {
+
+	if(this.nextElementSibling.classList.contains('active')) {
+		this.nextElementSibling.classList.remove('active')
+        console.log('1')
+	} else {
+
+		closeAccordionItem()
+		this.nextElementSibling.classList.toggle('active')
+		console.log('2')
+	}
+	
+}
+
+const closeAccordionItem = () => {
+	const allActiveItems = document.querySelectorAll('.accordion__info')
+	allActiveItems.forEach(item => item.classList.remove('active'))
+}
+
+const clickOutsideAccordion = e => {
+    if (
+		e.target.classList.contains('accordion__btn') ||
+		e.target.classList.contains('accordion__info') ||
+		e.target.classList.contains('accordion__info-text')
+	)
+		return
+
+	closeAccordionItem()
+}
+
+accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
+
+window.addEventListener('click', clickOutsideAccordion)
+
+const nav = document.querySelector('.navbar')
+
+const addShadow = () =>{
+    if (window.scrollY >= 300) {
+        nav.classList.add('shadow-bg')
+    } else {
+        nav.classList.remove('shadow-bg')
+    }
+}
+
+window.addEventListener('scroll', addShadow)
