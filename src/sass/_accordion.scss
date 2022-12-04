@@ -54,8 +54,8 @@
     
     &__tile {
         border-left: 3px solid $grey;
-        padding-left: 2em;
-        margin-bottom: 2em;
+        padding-left: 1em;
+        margin-bottom: 1em;
         transition: border-left .5s ease;
     }
     
@@ -93,7 +93,15 @@
 // @media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+    .accordions {
+        &__tile {
+            &-btn {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {

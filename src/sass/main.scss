@@ -14,12 +14,12 @@ html {
     scroll-behavior: smooth;
 }
 
-cursor body {
+body {
     font-size: 1.8rem;
     overflow-x: hidden;
     background-color: $white;
     color: $black;
-    font-family: 'Alexandria', sans-serif;
+    // font-family: 'Alexandria', sans-serif;
 }
 
 ::selection {
@@ -28,25 +28,25 @@ cursor body {
 }
 
 
-::-webkit-scrollbar {
-    width: 15px;
-}
+// ::-webkit-scrollbar {
+//     width: 15px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//     background-color: transparent;
+// }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    height: 200px;
-    background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 60%, rgba(173, 12, 122, 1) 100%);
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//     height: 200px;
+//     background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 60%, rgba(173, 12, 122, 1) 100%);
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//     background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
+// }
 
 
 .shadow-bg {
@@ -578,7 +578,7 @@ cursor body {
     .future {
         &__left {
             flex: 1;
-            margin: 0 20em 0 0;
+            margin: 0 5em 0 0;
         }
 
         &__right {

@@ -10,7 +10,7 @@
         &-left {
             a {
                 img {
-                    height: 80px;
+                    height: 90px;
                 }
             }
         }
@@ -19,7 +19,7 @@
             &--one {
                 display: flex;
                 flex-direction: row;
-                margin: 1.5em 0;
+                margin: 1em 0;
 
                 a {
                     &:first-child {
@@ -27,14 +27,19 @@
                     }
 
                     border-radius: 50%;
-                    padding: 1em;
+                    padding: .6em;
                     border: 1px solid $black;
-                    margin: 0 .5em;
+                    margin: 0 .3em;
 
                     img {
                         height: 20px;
                         width: 20px;
                     }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    transition: transform .3s ease;
                 }
             }
 
@@ -43,6 +48,10 @@
 
                 a {
                     font-weight: bold;
+                    &:hover {
+                        text-decoration: underline;
+                        color: $black;
+                    }
                 }
 
                 ul {
