@@ -1,4 +1,23 @@
 .footer {
+    &__top {
+        position: relative;
+        background: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
+        overflow: hidden;
+
+        &--wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-left {
+            img {
+               
+                width: 100%;
+            }
+           
+        }
+    }
+
     &__bottom {
         padding-bottom: 0;
 
@@ -39,6 +58,7 @@
                     &:hover {
                         transform: scale(1.2);
                     }
+
                     transition: transform .3s ease;
                 }
             }
@@ -48,6 +68,7 @@
 
                 a {
                     font-weight: bold;
+
                     &:hover {
                         text-decoration: underline;
                         color: $black;
@@ -79,6 +100,13 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .footer {
+        &__top {
+    
+            &--wrapper {
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
         &__bottom {
 
             &-mid {
@@ -117,7 +145,7 @@
                 margin: 0 10rem 0 15rem;
             }
 
-           
+
         }
     }
 }

@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     background-color: $white;
     color: $black;
-    // font-family: 'Alexandria', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ::selection {
@@ -124,7 +124,7 @@ body {
     background: linear-gradient(180deg, #e3017a 42.71%, #7d2c6f);
 
     background: linear-gradient(180deg, #762c6e, #35297a);
-
+    z-index: 99;
 
     &-img {
         height: 60px;
@@ -578,7 +578,7 @@ body {
     .future {
         &__left {
             flex: 1;
-            margin: 0 5em 0 0;
+            margin: 0 15em 0 0;
         }
 
         &__right {
