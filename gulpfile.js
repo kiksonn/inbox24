@@ -5,6 +5,7 @@ const {
     parallel,
     watch
 } = require('gulp');
+
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
@@ -23,6 +24,7 @@ const paths = {
     sass: './src/sass/**/*.scss',
     js: './src/js/**/*.js',
     imgSvg: './src/img/**/*.svg',
+    imgJpg: './src/img/**/*.jpg',
     img: './src/img/*',
     dist: './dist',
     sassDest: './dist/css',
@@ -73,6 +75,12 @@ function copySvg(done) {
     done()
 }
 
+function copyJpg(done) {
+    src(paths.imgJpg)
+        .pipe(dest(paths.imgDest))
+    done()
+}
+
 function handleKits(done) {
     src(paths.html)
         .pipe(kit())
@@ -100,12 +108,12 @@ function startBrowserSync(done) {
 
 function watchForChanges(done) {
     watch('./*.html').on("change", reload);
-    watch([paths.html, paths.sass, paths.js], parallel(handleKits, sassCompiler, javaScript, copySvg)).on("change", reload);
+    watch([paths.html, paths.sass, paths.js], parallel(handleKits, sassCompiler, javaScript, copySvg, copyJpg)).on("change", reload);
     watch(paths.img, convertImages).on("change", reload);
     done()
 }
 
 
-const mainFunctions = parallel(handleKits, sassCompiler, javaScript, copySvg, convertImages)
+const mainFunctions = parallel(handleKits, sassCompiler, javaScript, copySvg,copyJpg, convertImages)
 exports.cleanStuff = cleanStuff
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)

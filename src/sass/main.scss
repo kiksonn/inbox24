@@ -217,7 +217,7 @@ body {
     width: 100%;
     overflow: hidden;
     
-    background-image: url('../img/header-small.jpg');
+    background-image: url('../img/imgnc/header-small.jpg');
     background-size: cover;
     background-position: center;
     
@@ -258,7 +258,7 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .header {
-        background-image: url('../img/header-big.jpg');
+        background-image: url('../img/imgnc/header-big.jpg');
         &__title {
             font-size: 8rem;
         }
