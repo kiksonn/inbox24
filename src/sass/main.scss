@@ -387,8 +387,10 @@ body {
 
         // &-img {
 
-        //     width: 100%;
-        //     height: 100%;
+        //     overflow: none;
+        //   &:hover {
+        //     overflow: visible;
+        //   }
         // }
 
         &__left {
@@ -400,6 +402,19 @@ body {
                 // position: relative;
                 width: 100%;
                 height: 75%;
+                transition: opacity .3s ease;
+                &:hover .offer__left-hover{
+                    opacity: 1;
+                }
+            }
+            &-hover {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                transition: opacity .3s ease;
+                opacity: 0;
             }
 
             &-block {

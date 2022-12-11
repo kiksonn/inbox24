@@ -71,6 +71,11 @@ a {
         height: 25px;
         margin-left: 2rem;
     }
+
+    &--white {
+        background: $white;
+        color: $black;
+    }
 }
 
 .break {
