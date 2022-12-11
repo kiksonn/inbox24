@@ -41,26 +41,26 @@ const hideCookieBox = () => {
 showCookieBox()
 cookieBtn.addEventListener('click', hideCookieBox)
 
-setTimeout(() => {
-    spinerBox.style.display = "none";
-    // spinerBox.style.opacity = "-1";
-    document.body.style.overflow = "visible"
-    // spinerBox.style.transform = "translateX(200%)"
-}, 3100)
+// setTimeout(() => {
+//     spinerBox.style.display = "none";
+//     // spinerBox.style.opacity = "-1";
+//     document.body.style.overflow = "visible"
+//     // spinerBox.style.transform = "translateX(200%)"
+// }, 3100)
 
-const spinerTimeout = () => {
-    setTimeout(spinerWritingAnimation, 1500)
-    document.body.style.overflow = "hidden"
+// const spinerTimeout = () => {
+//     setTimeout(spinerWritingAnimation, 1500)
+//     document.body.style.overflow = "hidden"
 
-}
+// }
 
-const spinerWritingAnimation = () => {
-    spinerText.innerHTML = inputValue.slice(0, index);
-    index++;
-    if (index > inputValue.length) return;
-    timeout = setTimeout(spinerWritingAnimation, speed);
-}
-window.onload = spinerTimeout;
+// const spinerWritingAnimation = () => {
+//     spinerText.innerHTML = inputValue.slice(0, index);
+//     index++;
+//     if (index > inputValue.length) return;
+//     timeout = setTimeout(spinerWritingAnimation, speed);
+// }
+// window.onload = spinerTimeout;
 
 // const navBtn = document.querySelector('.hamburger')
 // const handleNav = () => {

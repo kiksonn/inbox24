@@ -39,6 +39,10 @@
     &-bold {
         font-weight: 500;
     }
+
+    &--white {
+        color: $white;
+    }
 }
 
 a {
@@ -75,6 +79,10 @@ a {
     &--white {
         background: $white;
         color: $black;
+    &:hover {
+        background: $white;
+        color: $black;
+    }
     }
 }
 
@@ -102,6 +110,15 @@ a {
         left: -50px;
         transform: skew(-45deg);
     }
+
+    &-clip {
+        right: 0;
+        transform: skew(0);
+        bottom: 0;
+        height: 40px;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
 }
 .line {
     display: flex;
@@ -128,7 +145,10 @@ a {
 
 }
 
-
+// .line-svg {
+//     display: none;
+//     position: absolute;
+// }
 
 // .link {
 //     position: relative;
@@ -229,7 +249,7 @@ a {
 @media (min-width: 992px) {
 
     .section {
-        padding: 8em 0;
+        padding: 6em 0;
     }
     
     .title-two {
@@ -239,3 +259,10 @@ a {
         font-size: 2.2rem;
     }
 }
+
+
+// @media(min-width: 1200px) {
+//     .line-svg {
+//         display: block;
+//     }
+// }
