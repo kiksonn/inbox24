@@ -1,4 +1,7 @@
 .about {
+    &__wrapper {
+        position: relative;
+    }
     &__box {
         display: flex;
         flex-direction: column;
