@@ -80,9 +80,10 @@
 
                     &:hover {
                         filter: invert(16%) sepia(89%) saturate(6944%) hue-rotate(319deg) brightness(88%) contrast(104%);
+                        transform: scale(1.1);
                     }
 
-                    transition: filter .3s ease;
+                    transition: transform .2s ease, filter .2s ease ;
                 }
             }
 
