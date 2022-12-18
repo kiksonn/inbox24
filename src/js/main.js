@@ -23,23 +23,6 @@ let speed = 130
 
 // window.addEventListener('mousemove', cursor)
 
-const cookieBox = document.querySelector('.cookie')
-const cookieBtn = document.querySelector('.cookie__box-link--accept')
-
-const showCookieBox = () => {
-    const cookies = localStorage.getItem('cookie')
-    if (cookies) {
-        cookieBox.classList.add('hidden-cookies')
-    }
-}
-
-const hideCookieBox = () => {
-    localStorage.setItem('cookie', 'true')
-    cookieBox.classList.add('hidden-cookies')
-}
-
-showCookieBox()
-cookieBtn.addEventListener('click', hideCookieBox)
 
 setTimeout(() => {
     spinerBox.style.display = "none";
@@ -128,14 +111,33 @@ accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
 
 window.addEventListener('click', clickOutsideAccordion)
 
-const nav = document.querySelector('.navbar')
+// const nav = document.querySelector('.navbar')
 
-const addShadow = () => {
-    if (window.scrollY >= 300) {
-        nav.classList.add('shadow-bg')
-    } else {
-        nav.classList.remove('shadow-bg')
+// const addShadow = () => {
+//     if (window.scrollY >= 300) {
+//         nav.classList.add('shadow-bg')
+//     } else {
+//         nav.classList.remove('shadow-bg')
+//     }
+// }
+
+// window.addEventListener('scroll', addShadow)
+
+
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie__box-link--accept')
+
+const showCookieBox = () => {
+    const cookies = localStorage.getItem('cookie')
+    if (cookies) {
+        cookieBox.classList.add('hidden-cookies')
     }
 }
 
-window.addEventListener('scroll', addShadow)
+const hideCookieBox = () => {
+    localStorage.setItem('cookie', 'true')
+    cookieBox.classList.add('hidden-cookies')
+}
+
+showCookieBox()
+cookieBtn.addEventListener('click', hideCookieBox)
