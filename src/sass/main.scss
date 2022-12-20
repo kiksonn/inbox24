@@ -814,3 +814,122 @@ body {
         }
     }
 }
+
+
+// CONTACT 
+
+.contact {
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__details {
+        position: relative;
+        padding: 2em;
+        margin-bottom: 2em;
+        border-radius: 4px;
+        color: grey;
+        overflow: hidden;
+        background-color: dark;
+
+        a {
+            color: grey;
+            text-decoration: none;
+        }
+    }
+
+    &__details-title {
+        margin-bottom: 2em;
+    }
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0.5em;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+
+        a {
+            transition: color .2s ease;
+        }
+
+        &:hover a {
+            color: white;
+        }
+
+        img {
+            height: 20px;
+            margin-right: .5em;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__input,
+    &__textarea {
+        border: 2px solid grey;
+        margin-bottom: 2em;
+        border-radius: 2px;
+        border-bottom: 2px solid grey;
+        background-color: black;
+
+        &:focus {
+            border: 2px solid white;
+            outline: none;
+        }
+
+    }
+
+    &__textarea {
+        resize: vertical;
+    }
+
+    &__input,
+    &__textarea,
+    &__btn {
+        padding: 1em;
+        font-size: 1.6rem;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        z-index: 0;
+        cursor: pointer;
+        overflow: hidden;
+        color: grey;
+        background-color: #2a2a2a;
+        text-transform: uppercase;
+        transition: background-color .3s ease;
+
+
+
+        &:hover {
+            background-color: dark;
+        }
+    }
+
+    &__bg-icon {
+        position: absolute;
+        bottom: -40%;
+        right: -40%;
+        width: 120%;
+        transform: rotate(25deg);
+        pointer-events: none;
+        opacity: .05;
+    }
+}
