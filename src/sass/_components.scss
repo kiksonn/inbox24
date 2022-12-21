@@ -133,14 +133,16 @@ a {
 
     &-block--one {
         width: 20%;
-        border-bottom: 2px solid $grey;
-        border-right: 3px solid $grey;
+        border-bottom: 8px solid $purple;
+        border-right: 10px solid $purple;
         transform: skew(-45deg);
     }
     &-block--two {
-        width: calc(80% - 8px);
-        border-top: 2px solid $grey;
+        width: calc(80% - 2px);
+        border-top: 8px solid ;
         right: 0;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
     }
 
 }
