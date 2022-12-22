@@ -23,32 +23,32 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-// ::selection {
-//     background-color: $purple;
-//     color: $white;
-// }
+::selection {
+    background-color: $purple;
+    color: $white;
+}
 
 
-// ::-webkit-scrollbar {
-//     width: 15px;
-// }
+::-webkit-scrollbar {
+    width: 15px;
+}
 
-// /* Track */
-// ::-webkit-scrollbar-track {
-//     background-color: transparent;
-// }
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//     height: 200px;
-//     background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 50%, rgba(173, 12, 122, 1) 100%);
-//     border-radius: 25px;
-// }
+/* Handle */
+::-webkit-scrollbar-thumb {
+    height: 200px;
+    background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 50%, rgba(173, 12, 122, 1) 100%);
+    
+}
 
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//     background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 35%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
-// }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 35%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
+}
 
 // LINES SVG
 
