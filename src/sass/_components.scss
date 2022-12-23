@@ -12,6 +12,9 @@
 
 .section {
     padding: 5em 0;
+    &-small {
+        padding-bottom: 3em;
+    }
 }
 
 .title-two {

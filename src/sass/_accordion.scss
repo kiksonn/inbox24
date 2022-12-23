@@ -6,6 +6,10 @@
 
     &__btns {
         display: flex;
+
+        &--column {
+            flex-direction: column;
+        }
     }
     
     &__tile {
@@ -23,7 +27,7 @@
             justify-content: center;
             align-items: center;
             color: $black;
-            height: 50px;
+            padding: 1em;
             font-size: 1.4rem;
             margin: 0;
             border: none;
@@ -99,6 +103,12 @@
         &__tile {
             &-btn {
                 font-size: 1.8rem;
+            }
+        }
+        
+        &__btns {
+            &--column {
+                flex-direction: row;
             }
         }
     }

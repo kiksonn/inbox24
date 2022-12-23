@@ -96,20 +96,20 @@ const closeAccordionItem = () => {
     AcordionBtn.forEach(item => item.classList.remove('active-two'))
 }
 
-const clickOutsideAccordion = e => {
-    if (
-        e.target.classList.contains('accordion__btn') ||
-        e.target.classList.contains('accordion__info') ||
-        e.target.classList.contains('accordion__info-text')
-    )
-        return
+// const clickOutsideAccordion = e => {
+//     if (
+//         e.target.classList.contains('accordion__btn') ||
+//         e.target.classList.contains('accordion__info') ||
+//         e.target.classList.contains('accordion__info-text')
+//     )
+//         return
 
-    closeAccordionItem()
-}
+//     closeAccordionItem()
+// }
 
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
 
-window.addEventListener('click', clickOutsideAccordion)
+// window.addEventListener('click', clickOutsideAccordion)
 
 // const nav = document.querySelector('.navbar')
 
