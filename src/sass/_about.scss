@@ -20,10 +20,12 @@
     &__texts {
         margin-top: 1rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         &__four {
-            margin: 0 .3em;
+            margin: 0 .3em .5em .3em;
             letter-spacing: -1px;
+            
         }
     }
 
@@ -61,7 +63,7 @@
         }
 
         &__texts {
-            
+            flex-wrap: nowrap;
             &__four {
                 margin: 0 1em;
             }
