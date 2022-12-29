@@ -146,9 +146,9 @@ a {
         right: 0;
         border-image-slice: 1;
         border-image-source: linear-gradient(115deg, rgba(51, 40, 121, 1) 0%, rgba(55, 39, 121, 1) 45%, rgba(173, 12, 122, 1) 75%, rgba(173, 12, 122, 1) 100%);
-        border-right: none;
-        border-bottom: none;
-        border-left: none;
+        border-right: transparent;
+        border-bottom: transparent;
+        border-left: transparent;
     }
 
 }
